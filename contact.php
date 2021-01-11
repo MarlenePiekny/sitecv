@@ -1,5 +1,8 @@
-<!DOCTYPE html>
 
+<?php
+//"Ajout du header"
+require 'header.php'
+?>
 
   <main>
     <h1>Contact</h1>
@@ -146,3 +149,7 @@
 
   </main>
 
+<?php
+//"Ajout du footer"
+require 'footer.php'
+?>

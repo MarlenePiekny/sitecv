@@ -1,5 +1,8 @@
-<!DOCTYPE html>
 
+<?php
+//"Ajout du header"
+require 'header.php'
+?>
 
   <main class="hobby">
     <h1>Peinture aquarelle</h1>
@@ -13,3 +16,7 @@
       allowfullscreen></iframe>
   </main>
 
+<?php
+//"Ajout du footer"
+require 'footer.php'
+?>

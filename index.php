@@ -1,5 +1,8 @@
-<!DOCTYPE html>
 
+<?php
+//"Ajout du header"
+require 'header.php'
+?>
 
   <main>
     <h1>A propos</h1>
@@ -60,6 +63,9 @@
 
     </table>
 
-
   </main>
 
+<?php
+//"Ajout du footer"
+require 'footer.php'
+?>
