@@ -1,7 +1,9 @@
 
 <?php
 //"Ajout du header"
-require 'header.php'
+$metaTitle = "Accueil";
+$metaDescription = "Voici la page d'accueil de mon CV";
+require 'header.php';
 ?>
 
   <main>

@@ -1,6 +1,8 @@
 
 <?php
 //"Ajout du header"
+$metaTitle = "Hobby";
+$metaDescription = "Voici mon hobby";
 require 'header.php'
 ?>
 

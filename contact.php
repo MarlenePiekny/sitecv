@@ -1,6 +1,8 @@
 
 <?php
 //"Ajout du header"
+$metaTitle = "Contact";
+$metaDescription = "Voici mon formulaire de contact";
 require 'header.php'
 ?>
 
