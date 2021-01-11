@@ -1,9 +1,8 @@
-
 <?php
 //"Ajout du header"
 $metaTitle = "Contact";
 $metaDescription = "Voici mon formulaire de contact";
-require 'header.php'
+require 'template/header.php'
 ?>
 
   <main>
@@ -153,5 +152,5 @@ require 'header.php'
 
 <?php
 //"Ajout du footer"
-require 'footer.php'
+require 'template/footer.php'
 ?>

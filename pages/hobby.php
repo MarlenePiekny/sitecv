@@ -1,9 +1,8 @@
-
 <?php
 //"Ajout du header"
 $metaTitle = "Hobby";
 $metaDescription = "Voici mon hobby";
-require 'header.php'
+require 'template/header.php'
 ?>
 
   <main class="hobby">
@@ -20,5 +19,5 @@ require 'header.php'
 
 <?php
 //"Ajout du footer"
-require 'footer.php'
+require 'template/footer.php'
 ?>
