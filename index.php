@@ -3,15 +3,18 @@
 
 //Traitement du $_GET['page']
 
-if (isset($_GET['page'])){
+//Déclaration et affectation de la variable pageFiltree avec le filter_input
+$pageFiltree = filter_input(INPUT_GET, 'page', FILTER_SANITIZE_URL);
+
+if (isset($pageFiltree)){
     //Le getpage existe
-    if ($_GET['page']== "cv") {
+    if ($pageFiltree== "cv") {
         //La page demandée est la page cv.php
         require 'pages/cv.php';
-    } else if ($_GET['page'] == "hobby" ) {
+    } else if ($pageFiltree == "hobby" ) {
         //La page demandée est la page hobby.php
         require 'pages/hobby.php';
-    } else if ($_GET['page'] == "contact" ) {
+    } else if ($pageFiltree == "contact" ) {
         //La page demandée est la page contact.php
         require 'pages/contact.php';
     } else {
