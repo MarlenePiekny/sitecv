@@ -1,10 +1,11 @@
 
 <?php
 
-//Traitement du $_GET['page']
+//Traitement via Front Controller
 
 //Déclaration et affectation de la variable pageFiltree avec le filter_input
-$pageFiltree = filter_input(INPUT_GET, 'page', FILTER_SANITIZE_URL);
+$pageFiltree = filter_input(INPUT_GET, 'page', FILTER_SANITIZE_SPECIAL_CHARS);
+
 
 if (isset($pageFiltree)){
     //Le getpage existe

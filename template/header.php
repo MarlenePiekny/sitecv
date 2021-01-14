@@ -25,8 +25,8 @@
         </div>
     </div>
     <nav>
-        <a href="index.php">A propos</a>
-        <a href="hobby.php">Mes hobbies</a>
-        <a href="contact.php">Contact</a>
+        <a href="index.php?page=cv">A propos</a>
+        <a href="index.php?page=hobby">Mes hobbies</a>
+        <a href="index.php?page=contact">Contact</a>
     </nav>
 </header>
