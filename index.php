@@ -1,5 +1,17 @@
-
 <?php
+//Démarrage de la session
+session_start();
+
+//Affecter l'horadatage de la session
+date_default_timezone_set('Europe/Paris');
+
+//Si il y n'y a pas de session en cours on affecte un horodatage à la session
+if (!isset($_SESSION['dateFirstVisit'])) {
+    $_SESSION['dateFirstVisit'] = date('Y-m-d-H:i:s');
+}
+
+//Compteur de pages visités, incrément de 1 à chaque fois qu'on repasse par l'index
+$_SESSION['countViewPage'] = $_SESSION['countViewPage'] +1;
 
 //Traitement via Front Controller
 
@@ -24,7 +36,7 @@ if (isset($pageFiltree)){
     }
 
 } else {
-    //Le $_GET['page'] n'exite pas, on renvoie la page d'accueil
+    //La page demandée n'exite pas, on renvoie la page d'accueil
     require 'pages/cv.php';
 }
 
